@@ -21,7 +21,9 @@ function Home() {
         }else setImage(PasalubongLogo);
     }
   return (
+    
     <section id="Home" className='bg-pink-200 h-full relative'>
+      
         <Swiper
         spaceBetween={30}
         centeredSlides={true}
@@ -37,8 +39,8 @@ function Home() {
        className='h-full'
       >
      
-        <SwiperSlide><img src={Testimonal1} alt="" /></SwiperSlide>
-        <SwiperSlide><img src={Testimonal2} alt="" /></SwiperSlide>
+        <SwiperSlide><img className="h-[600px] m-auto" src={Testimonal1} alt="" /></SwiperSlide>
+        <SwiperSlide><img className="h-[600px] m-auto" src={Testimonal2} alt="" /></SwiperSlide>
         <SwiperSlide><div className='flex justify-center items-center'><img className='h-[300px] w-auto' src={image} alt="" /></div></SwiperSlide>
        
       </Swiper>

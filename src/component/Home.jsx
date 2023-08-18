@@ -41,7 +41,7 @@ function Home() {
      
         <SwiperSlide><img className="h-[600px] m-auto" src={Testimonal1} alt="" /></SwiperSlide>
         <SwiperSlide><img className="h-[600px] m-auto" src={Testimonal2} alt="" /></SwiperSlide>
-        <SwiperSlide><div className='flex justify-center items-center'><img className='h-[300px] w-auto' src={image} alt="" /></div></SwiperSlide>
+       
        
       </Swiper>
       <button onClick={changeImage}>Change</button>

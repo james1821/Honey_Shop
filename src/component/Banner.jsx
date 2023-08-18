@@ -17,7 +17,7 @@ function Banner() {
           
         </div>
        
-       <img  src={Honelyn1} alt="" className='h-[400px] md:h-[500px] m-auto md:m-0 z-0' />
+       <img  src={Honelyn1} alt="" className='h-[450px] md:h-[500px] m-auto md:m-0 z-0' />
        
        
 

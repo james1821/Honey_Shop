@@ -9,34 +9,43 @@ import Testimonal2 from '../assets/img/testimonal-2.jpg'
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+
+import { Autoplay, Pagination } from 'swiper/modules';
 
 function Home() {
-    const [image,setImage]=useState(PasalubongLogo);
-
-    function changeImage(){
-        if(image==PasalubongLogo){
-        setImage(Logo);
-        }else setImage(PasalubongLogo);
-    }
+    
   return (
     
     <section id="Home" className='bg-pink-200 h-full relative'>
-      
-        <Swiper
-        spaceBetween={30}
-        centeredSlides={true}
+          <h1 className='text-3xl text-center p-5'>Our Happy Customers</h1>
+          
+          <Swiper
         autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+         
+        slidesPerView={1}
+        spaceBetween={10}
         pagination={{
           clickable: true,
         }}
-        navigation={true}
-        modules={[Autoplay, Pagination, Navigation]}
-       className='h-full'
+        breakpoints={{
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 2,
+            spaceBetween: 50,
+          },
+        }}
+        modules={[Autoplay,Pagination]}
+        className="mySwiper"
       >
      
         <SwiperSlide><img className="h-[600px] m-auto" src={Testimonal1} alt="" /></SwiperSlide>
@@ -44,7 +53,7 @@ function Home() {
        
        
       </Swiper>
-      <button onClick={changeImage}>Change</button>
+ 
     </section>
   )
 }

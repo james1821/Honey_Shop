@@ -1,6 +1,6 @@
 import React from 'react'
 import Logo from '../assets/img/Logo.png'
-import PasalubongLogo from '../assets/img/pasalubong_logo.jpg'
+import PasalubongLogo from '../assets/img/pasalubong_logo.png'
  
 export const Nav = () => {
   const [open, setOpen] = React.useState(false);

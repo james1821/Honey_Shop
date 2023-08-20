@@ -3,6 +3,7 @@ import Nav from './component/Nav'
 import Home from './component/Home'
 import Banner from './component/Banner'
 import Products from './component/Products'
+import PasalubongLogo from './assets/img/pasalubong_logo.png'
 function App() {
   
 
@@ -11,8 +12,8 @@ function App() {
      <Nav/>
      <Banner/>
      <Home/>
-     <Products header="Pasalubong"/>
-     <Products header="Money Bouquet"/>
+     <Products header="Dalida's Pasalubong" Logo={PasalubongLogo}/>
+
    
     </>
   )

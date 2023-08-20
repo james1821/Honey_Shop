@@ -16,8 +16,8 @@ function Home() {
     
   return (
     
-    <section id="Home" className='bg-pink-200 h-full relative'>
-          <h1 className='text-3xl text-center p-5'>Our Happy Customers</h1>
+    <section id="Home" className='bg-gradient-to-r from-pink-300  to-white h-full relative'>
+          <h1 className='text-5xl md:text-7xl text-center p-5'>Our Happy Customers</h1>
           
           <Swiper
         autoplay={{

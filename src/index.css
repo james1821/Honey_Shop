@@ -4,7 +4,11 @@
 
 
 @layer base {
-    html {
+    #head {
       font-family: brush scriopt mt, cursive;
+    }
+
+    #Home {
+      font-family: optima, sans-serif;
     }
   }

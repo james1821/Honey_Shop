@@ -8,15 +8,15 @@ function Banner() {
     <header id='head' className='h-full bg-white ' >
         <div className='flex flex-col justify-center  items-center lg:w-1/2 lg:float-right relative z-10'> 
             <h1 className='text-5xl mt-20 text-center '>"Quality Products, for everyone"</h1>
-            <div className='flex  justify-center  items-center w-1/2 lg:float-right relative z-10 my-10'> 
-                 <img className='h-[100px]' src={Logo} alt="" />
+            <div className='flex  justify-center  items-center w-1/2 lg:float-right relative z-10 my-10 md:gap-10 gap-5'> 
+                 <img className='h-[80px]' src={Logo} alt="" />
                  <img className='h-[100px]' src={PasalubongLogo} alt="" />
 
             </div>
           
         </div>
        
-       <img  src={Honelyn1} alt="" className='h-[450px] md:h-[650px] m-auto md:m-0 z-0' />
+       <img  src={Honelyn1} alt="" className='h-[450px] md:h-[650px] m-auto lg:m-0 z-0' />
        
        
 

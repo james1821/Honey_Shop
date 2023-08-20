@@ -9,6 +9,9 @@ export default {
       backgroundImage: {
         'sunflower': "url('../assets/img/sunflower.png')",
        
+      },
+      colors:{
+        'primary':"linear-gradient(315deg, #e96196 0%, #ffffff 74%);",
       }
     },
   },

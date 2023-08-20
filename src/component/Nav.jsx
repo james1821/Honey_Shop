@@ -16,7 +16,7 @@ export const Nav = () => {
             <a href="#">
               
               <img
-                className="h-20 w-auto  "
+                className="h-[50px] md:h-[80px] w-auto  "
                 src={Logo}
                 alt=""
               />

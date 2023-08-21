@@ -4,8 +4,8 @@
 
 
 @layer base {
-    #banner {
-      font-family: brush scriopt mt, cursive;
+    #head {
+      font-family: brush script mt, cursive;
     }
     
     #Products {

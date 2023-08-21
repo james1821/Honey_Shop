@@ -4,7 +4,7 @@
 
 
 @layer base {
-    html {
+    #banner {
       font-family: brush scriopt mt, cursive;
     }
 

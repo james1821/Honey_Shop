@@ -4,7 +4,7 @@ import { Fade, Slide } from "../../node_modules/react-awesome-reveal";
 
 export default function Products({header, subtitle, Logo}) {
   return (
-    <div id='Products' className='h-full font-mono'>
+    <div id='Products' className='h-full '>
         <div className='flex flex-col md:flex-row justify-center items-center absolute mt-10'>
          
                 <h1 className='text-center text-5xl md:text-[8rem]  pb-5' >{header}</h1>

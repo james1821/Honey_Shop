@@ -13,7 +13,7 @@ export default function Products({header, subtitle, Logo}) {
         </div>
         <Slide
         direction='right'>
-        <img src={Logo} alt=""  className='h-[400px] w-auto float-right bottom-0 opacity-25 relative '/>
+        <img src={Logo} alt=""  className='h-[400px] w-auto float-right bottom-0 opacity-10 relative '/>
         </Slide>
 
 

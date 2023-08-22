@@ -6,9 +6,13 @@
 @layer base {
     #head {
       font-family: brush script mt, cursive;
+      background-image: url('img/sunflower.png');
+     background-repeat: repeat-x;
+    background-position: bottom;
     }
     
     #Products {
       font-family: Verdana, Geneva, Tahoma, sans-serif;
+      background-image: url('img/sunflower.png');
     }
   }

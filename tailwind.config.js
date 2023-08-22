@@ -5,9 +5,9 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {
+    extend: {                 
       backgroundImage: {
-        'sunflower': "url('../assets/img/sunflower.png')",
+        'sunflower': "url('/public/img/sunflower.png')"
        
       },
       colors:{

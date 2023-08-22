@@ -16,7 +16,7 @@ function Home() {
     
   return (
     
-    <section id="Home" className='bg-gradient-to-r from-pink-300  to-white h-full relative'>
+    <section id="Home" className='bg-gradient-to-r from-pink-300 to-pink-100'>
           <h1 className='text-5xl md:text-7xl text-center p-5'>Our Happy Customers</h1>
           
           <Swiper

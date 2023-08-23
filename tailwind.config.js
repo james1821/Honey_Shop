@@ -12,7 +12,10 @@ export default {
       },
       colors:{
         'primary':"linear-gradient(315deg, #e96196 0%, #ffffff 74%);",
-      }
+      },
+      fontFamily: {
+       'heading':' brush script mt, cursive'
+      },
     },
   },
   plugins: [],

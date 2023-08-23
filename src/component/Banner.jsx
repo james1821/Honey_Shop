@@ -21,13 +21,13 @@ function Banner() {
                <Slide
                direction='right'
             
-               >  <img  className='h-[100%] w-auto' src={PasalubongLogo} alt="" />
+               > <a href='#Products'><img  className='h-[100%] w-auto' src={PasalubongLogo} alt="" /></a> 
                </Slide>
 
             </div>
           
         </div>
-       <Fade delay={200}>  <img  src={Honelyn1} alt="" className='h-[400px] md:h-[650px] m-auto lg:m-0 z-0' /></Fade>
+       <Fade delay={200}>  <img  src={Honelyn1} alt="" className='h-[400px] md:h-[680px] m-auto lg:m-0 z-0' /></Fade>
      
        
        

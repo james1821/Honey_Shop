@@ -11,13 +11,16 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 
 import { Autoplay, Pagination } from 'swiper/modules';
+import { Slide } from 'react-awesome-reveal';
 
 function Home() {
     
   return (
     
     <section id="Home" className='bg-gradient-to-r from-pink-300 to-pink-100'>
-          <h1 className='text-5xl md:text-7xl text-center p-5'>Our Happy Customers</h1>
+         <Slide><h1 className='text-5xl font-heading  md:text-7xl text-center '>Our Happy</h1></Slide> 
+
+         <Slide direction='right'><h1 className='text-5xl font-heading md:text-7xl text-center pb-5'> Customers</h1></Slide> 
           
           <Swiper
         autoplay={{

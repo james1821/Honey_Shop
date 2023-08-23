@@ -4,6 +4,9 @@
 
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
     #head {
       font-family: brush script mt, cursive;
       background-image: url('/img/sunflower.png');

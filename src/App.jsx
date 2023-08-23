@@ -12,7 +12,7 @@ function App() {
      <Nav/>
      <Banner/>
      <Home/>
-     <Products header="Dalida's Pasalubong" Logo={PasalubongLogo}/>
+     <Products header="Dalida's Pasalubong" Logo={PasalubongLogo} subtitle='"From the comforting crunch of pan-roasted to the delightful sweetness of sugar-coated peanuts and the spicy allure of our chili garlic oil, we have your cravings covered."'/>
 
    
     </>

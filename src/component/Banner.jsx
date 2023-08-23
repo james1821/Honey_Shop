@@ -27,7 +27,7 @@ function Banner() {
             </div>
           
         </div>
-       <Fade delay={200}>  <img  src={Honelyn1} alt="" className='h-[300px] md:h-[650px] m-auto lg:m-0 z-0' /></Fade>
+       <Fade delay={200}>  <img  src={Honelyn1} alt="" className='h-[400px] md:h-[650px] m-auto lg:m-0 z-0' /></Fade>
      
        
        

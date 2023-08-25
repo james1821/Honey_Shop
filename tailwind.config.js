@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {                 
       backgroundImage: {
-        'sunflower': "url('/public/img/sunflower.png')"
+        'sunflower': "url('/public/img/sunflower.png')",
+        'peanuts': "url('/public/img/Products-nuts.png')"
        
       },
       colors:{

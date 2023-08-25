@@ -4,17 +4,17 @@ import Home from './component/Home'
 import Banner from './component/Banner'
 import Products from './component/Products'
 import PasalubongLogo from './assets/img/pasalubong_logo.png'
+import prodList from './component/Product-list/product-list'
 function App() {
-  
+
 
   return (
     <>
      <Nav/>
      <Banner/>
-     <Home/>
-     <Products header="Dalida's Pasalubong" Logo={PasalubongLogo} subtitle='"From the comforting crunch of pan-roasted to the delightful sweetness of sugar-coated peanuts and the spicy allure of our chili garlic oil, we have your cravings covered."'/>
+     <Products header={prodList.prodList[0].prodHead} Logo={PasalubongLogo} subtitle={prodList.prodList[0].prodLine}/>
+     {/* <Home/> */}
 
-   
     </>
   )
 }

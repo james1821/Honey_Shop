@@ -13,6 +13,12 @@
      background-repeat: repeat-x;
     background-position: bottom;
     }
+    #Peanuts {
+      font-family: brush script mt, cursive;
+      background-image: url('/img/peanuts-bg.jpg');
+     background-repeat: no-repeat;
+      background-size: cover;
+    }
     
     #Products {
       font-family: Verdana, Geneva, Tahoma, sans-serif;

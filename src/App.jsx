@@ -14,7 +14,7 @@ function App() {
     <>
      <Nav/>
      <Banner/>
-     <Products header={prodList.prodList[0].prodHead} Logo={PasalubongLogo} subtitle={prodList.prodList[0].prodLine}/>
+     <Products header={prodList.prodList[0].prodHead} Logo={PasalubongLogo}  subtitle={prodList.prodList[0].prodLine}/>
      {/* <Home/> */}
      <PriceList data={priceListData} />
     </>

@@ -4,7 +4,7 @@ import { Autoplay, Pagination } from 'swiper/modules';
 
 const PriceList = ({ data }) => {
   return (
-    <div className='mt-10 bg-orange-800'>
+    <div id='Peanuts' className='mt-10 '>
       <Swiper
       
        slidesPerView={1}
@@ -34,8 +34,8 @@ const PriceList = ({ data }) => {
         {data.map((product, index) => (
           <SwiperSlide key={index}>
             <div className='flex flex-col justify-center items-center md:flex-row'>
-              <img className="h-[200px]" src={product.prodImg} alt={product.prodName} />
-              <div className='flex flex-col justify-center items-center text-2xl p-10'>
+              <img className="h-[200px] my-5" src={product.prodImg} alt={product.prodName} />
+              <div className='flex flex-col justify-center items-center text-2xl p-10 bg-white'>
                 <h2>{product.prodName}</h2>
                 {product.prodPrice && <p>Price: {product.prodPrice}</p>}
                 {product.prodGrams && <p>Grams: {product.prodGrams}</p>}

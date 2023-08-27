@@ -8,8 +8,8 @@ export default {
     extend: {                 
       backgroundImage: {
         'sunflower': "url('/public/img/sunflower.png')",
-        'peanuts': "url('/public/img/Products-nuts.png')"
-       
+        'peanuts': "url('/public/img/Products-nuts.png')",
+          'peanutsBG': "url('/public/img/peanuts-bg.jpg')"
       },
       colors:{
         'primary':"linear-gradient(315deg, #e96196 0%, #ffffff 74%);",

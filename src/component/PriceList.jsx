@@ -1,31 +1,34 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
+import { Autoplay, Pagination } from 'swiper/modules';
 
 const PriceList = ({ data }) => {
   return (
-    <div className='mt-10'>
+    <div className='mt-10 bg-orange-800'>
       <Swiper
-       
-        slidesPerView={1}
-        spaceBetween={10}
-        pagination={{
-          clickable: true,
-        }}
-        breakpoints={{
-          640: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          768: {
-            slidesPerView: 2,
-            spaceBetween: 40,
-          },
-          1024: {
-            slidesPerView: 2,
-            spaceBetween: 50,
-          },
-        }}
+      
+       slidesPerView={1}
+       spaceBetween={10}
+       pagination={{
+          className:'bg-black',
+         clickable: true,
+       }}
+       breakpoints={{
+         640: {
+           slidesPerView: 2,
+           spaceBetween: 20,
+         },
+         768: {
+           slidesPerView: 2,
+           spaceBetween: 40,
+         },
+         1024: {
+           slidesPerView: 2,
+           spaceBetween: 50,
+         },
+       }}
+       modules={[Pagination]}
+       className="mySwiper"
       
       >
         {data.map((product, index) => (

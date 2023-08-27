@@ -14,7 +14,7 @@
     background-position: bottom;
     }
     #Peanuts {
-      font-family: "Comic Sans MS", "Comic Sans", cursive;
+      font-family: "Comic Sans MS", "Comic Sans";
       background-image: url('/img/peanuts-bg.jpg');
      background-repeat: no-repeat;
       background-size: cover;

@@ -2,7 +2,7 @@
 
 const priceListData = [
     {
-      prodImg: '/img/Nuts1.jpg',
+      prodImg: '/img/SugarNuts.png',
       prodName: "Sugar Coated Peanut",
       prodPrice: '₱50',
       prodGrams: '100 grams'

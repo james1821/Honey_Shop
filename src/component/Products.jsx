@@ -23,19 +23,8 @@ export default function Products({header, subtitle, Logo}) {
               <Slide direction='left'><img src={Logo} alt="" className='md:h-[250px] w-auto basis-1/2'/></Slide>
              
              <Slide direction='right'> <img src="/img/Products-nuts.png" alt="" className='h-auto md:w-[600px]' /></Slide>
-           
-             <TypeAnimation
-  sequence={[
-   
-    subtitle,
-    1000
-
-  ]}
-  speed={50}
-  className='text-center text-2xl  md:hidden'
-  repeat={Infinity}
-/>
-               
+             
+                <p className='text-center text-2xl px-10 md:hidden '>{subtitle}</p>
            
         </div>
         {/* <Slide

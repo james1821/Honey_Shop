@@ -15,19 +15,19 @@ function Banner() {
                <Slide
                direction='left'
               
-               > <img className='h-[80%] w-auto' src={Logo} alt="" />
+               > <img className='h-[80%] w-auto' src={Logo} alt="" loading="lazy" />
                </Slide> 
 
                <Slide
                direction='right'
             
-               > <a href='#Products'><img  className='h-[100%] w-auto' src={PasalubongLogo} alt="" /></a> 
+               > <a href='#Products'><img  className='h-[100%] w-auto' src={PasalubongLogo} alt="" loading="lazy"/></a> 
                </Slide>
 
             </div>
           
         </div>
-       <Fade delay={200}>  <img  src={Honelyn1} alt="" className='h-[400px] md:h-[680px] m-auto lg:m-0 z-0' /></Fade>
+       <Fade delay={200}>  <img  src={Honelyn1} alt="" className='h-[400px] md:h-[680px] m-auto lg:m-0 z-0'  loading="lazy"/></Fade>
      
        
        

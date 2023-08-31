@@ -9,7 +9,7 @@ const Nav = () => {
 
   return (
     <nav
-      className={`flex lg:items-center lg:justify-between p-6  bg-pink-400 rounded-md z-10 ${
+      className={`flex lg:items-center lg:justify-between p-6  bg-pink-400 rounded-md z-20 sticky ${
         isOpen ? 'lg:w-full' : 'w-[60px] lg:w-full'
       } fixed lg:sticky top-0 ${
         isOpen ? 'justify-end' : '' 

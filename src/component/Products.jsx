@@ -20,7 +20,7 @@ export default function Products({header, subtitle, Logo}) {
   repeat={Infinity}
 />
         <div className='flex flex-col lg:flex-row justify-center items-center  mt-10 px-5 '>
-              <Slide direction='left'><img src={Logo} alt="" className='md:h-[250px] w-auto basis-1/2'/></Slide>
+              <Slide direction='left'><img src={Logo} alt="" className='md:h-[250px] w-auto basis-1/2 h-[100px]'/></Slide>
              
              <Slide direction='right'> <img src="/img/Products-nuts.png" alt="" className='h-auto md:w-[600px]' /></Slide>
              

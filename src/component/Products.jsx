@@ -16,8 +16,8 @@ export default function Products({header, subtitle, Logo}) {
   ]}
   speed={50}
   style={{ fontSize: '3em', textAlign:'center'}}
-  className='hidden md:block'
-  repeat={Infinity}
+  className='hidden md:block font-mono'
+  
 />
         <div className='flex flex-col lg:flex-row justify-center items-center  mt-10 px-5 '>
               <Slide direction='left'><img src={Logo} alt="" className='md:h-[250px] w-auto basis-1/2 h-[100px]'/></Slide>

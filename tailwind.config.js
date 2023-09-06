@@ -13,6 +13,7 @@ export default {
       },
       colors:{
         'primary':"linear-gradient(315deg, #e96196 0%, #ffffff 74%);",
+        'ivory':'#FFF8DC'
       },
       fontFamily: {
        'heading':' brush script mt, cursive'

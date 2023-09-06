@@ -15,14 +15,16 @@
     }
     #Peanuts {
       font-family: "Comic Sans MS", "Comic Sans";
-      background-image: url('/img/peanuts-bg.jpg');
-     background-repeat: no-repeat;
-      background-size: cover;
+      background-color: white;
     }
     
     #Products {
       font-family: Verdana, Geneva, Tahoma, sans-serif;
      
+    }
+    #ProductListItems{
+      border-style: outset;
+      border-width: 2px;
     }
   }
   .swiper-pagination-bullet-active {

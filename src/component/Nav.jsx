@@ -9,13 +9,13 @@ const Nav = () => {
 
   return (
     <nav
-      className={`flex lg:items-center lg:justify-between p-6  bg-pink-400 rounded-md z-20 sticky ${
-        isOpen ? 'lg:w-full' : 'w-[60px] lg:w-full'
-      } fixed lg:sticky top-0 ${
+      className={`flex md:items-center md:justify-between p-6  bg-transparent rounded-md z-20 sm:sticky ${
+        isOpen ? 'lg:w-full' : 'sm:w-[60px] lg:w-full'
+      }   ${
         isOpen ? 'justify-end' : '' 
       }`}
     >
-      <div className="block lg:hidden">                                       
+      <div className="block md:hidden">                                       
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="flex self-end rounded text-black-500"
@@ -37,44 +37,44 @@ const Nav = () => {
         </button>
       </div>
       <div
-        className={`lg:w-full lg:h-2 lg:flex lg:items-center lg:text-center ${
+        className={`md:w-full md:h-2 md:flex md:items-center md:text-center ${
           isOpen ? 'block' : 'hidden'
         }`}
       >
-        <div className="text-xl lg:flex-grow lg:space-x-[5rem]">
+        <div className="text-xl md:flex-grow md:space-x-[5rem]">
           <a
             href="#Home"
             onClick={handleLinkClick}
-            className="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-pink-500 mr-4"
+            className="block mt-4 md:inline-block md:mt-0 text-black hover:text-pink-500 mr-4"
           >
             Home
           </a>
 
           <a
-            href="#About"
+            href="#Products"
             onClick={handleLinkClick}
-            className="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-pink-500 mr-4"
+            className="block mt-4 md:inline-block md:mt-0 text-black hover:text-pink-500 mr-4"
           >
-            About
+            Products
           </a>
           <a
             href="#Background"
             onClick={handleLinkClick}
-            className="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-pink-500 mr-4"
+            className="block mt-4 md:inline-block md:mt-0 text-black hover:text-pink-500 mr-4"
           >
             Background
           </a>
           <a
             href="#Works"
             onClick={handleLinkClick}
-            className="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-pink-500 mr-4"
+            className="block mt-4 md:inline-block md:mt-0 text-black hover:text-pink-500 mr-4"
           >
             Works
           </a>
           <a
             href="#"
             onClick={handleLinkClick}
-            className="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-pink-500 mr-4"
+            className="block mt-4 md:inline-block md:mt-0 text-black hover:text-pink-500 mr-4"
           >
             Contacts
           </a>

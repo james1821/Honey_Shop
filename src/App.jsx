@@ -7,6 +7,7 @@ import PasalubongLogo from './assets/img/pasalubong_logo.png'
 import prodList from './component/Product-list/product-list'
 import PriceList from './component/PriceList'; 
 import priceListData from './component/Product-list/Prices'; 
+import priceListFlowerData from './component/Product-list/FlowerPrices'; 
 function App() {
 
 
@@ -17,6 +18,8 @@ function App() {
      <Products header={prodList.prodList[0].prodHead} Logo={PasalubongLogo}  subtitle={prodList.prodList[0].prodLine}/>
      {/* <Home/> */}
      <PriceList data={priceListData} />
+     <Products header={prodList.prodList[0].prodHead} Logo={PasalubongLogo}  subtitle={prodList.prodList[0].prodLine}/>
+     <PriceList data={priceListFlowerData} />
     </>
   
   )

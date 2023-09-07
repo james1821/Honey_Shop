@@ -9,16 +9,18 @@ export default function Products({header, subtitle, Logo}) {
     <div id='Products' className='h-full lg:h-[500px] flex flex-col justify-center items-center ' >
          
         <div className='flex flex-col lg:flex-row justify-center items-center  mt-10 px-5 '>
-              <Slide direction='left'><img src={Logo} alt="" className='md:h-[250px] w-auto basis-1/2 h-[100px]'/></Slide>
+              <Fade ><img src={Logo} alt="" className='md:h-[250px] w-auto basis-1/2 h-[100px]'/></Fade>
              
-             <Slide direction='right'> <img src="/img/Products-nuts.png" alt="" className='h-auto md:w-[600px]' /></Slide>
+             <Fade> <img src="/img/Products-nuts.png" alt="" className='h-auto md:w-[600px]' /></Fade>
              
                 
            
         </div>
-       <a href="https://www.facebook.com/dalidapasalubong" target='_blank'>
+            <Fade>
+            <a href="https://www.facebook.com/dalidapasalubong" target='_blank'>
        <img src = "/img/FacebookFind.svg" alt="FindUs" className='h-[50px] md:h-[70px]'/>
         </a> 
+            </Fade>
         <TypeAnimation
       sequence={[
      

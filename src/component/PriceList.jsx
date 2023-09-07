@@ -47,7 +47,7 @@ const PriceList = ({ data }) => {
               className='flex justify-center items-center text-center flex-row py-2 bg-white rounded-[2rem] mx-7 my-2 '
               onClick={() => handleClick(index)}
             >
-              <img className="h-[200px] my-5" src={product.prodImg} alt={product.prodName} />
+              <img className="h-[150px] md:h-[200px] my-5" src={product.prodImg} alt={product.prodName} />
               <div className='flex flex-col justify-center items-center text-2xl md:text-1xl bg-white rounded'>
               
                 {clickedItems.includes(index) ? (

@@ -7,31 +7,35 @@ import { TypeAnimation } from 'react-type-animation';
 export default function Products({header, subtitle, Logo}) {
   return (
     <div id='Products' className='h-full lg:h-[500px] flex flex-col justify-center items-center ' >
-          <TypeAnimation
-  sequence={[
-   
-    subtitle,
-    1000
-
-  ]}
-  speed={50}
-  style={{ fontSize: '3em', textAlign:'center'}}
-  className='hidden md:block font-mono'
-  
-/>
+         
         <div className='flex flex-col lg:flex-row justify-center items-center  mt-10 px-5 '>
               <Slide direction='left'><img src={Logo} alt="" className='md:h-[250px] w-auto basis-1/2 h-[100px]'/></Slide>
              
              <Slide direction='right'> <img src="/img/Products-nuts.png" alt="" className='h-auto md:w-[600px]' /></Slide>
              
-                <p className='text-center text-2xl px-10 md:hidden '>{subtitle}</p>
+                
            
         </div>
-        {/* <Slide
-        direction='right'>
-        <img src={Logo} alt=""  className='h-[400px] w-auto float-right bottom-0 opacity-10  '/>
-        </Slide> */}
+        <img src = "/img/FacebookFind.svg" alt="FindUs" className='h-[50px] md:h-[70px]'/>
+        <TypeAnimation
+      sequence={[
+     
+        'Interested?',
+        1000, 
+        'Message Us On Our Facebook Page',
+        2000
+      ]}
+      wrapper="span"
+      speed={50}
+     className='text-[1rem] md:text-5xl'
 
+      repeat={Infinity}
+    />
+
+
+        
+      
+                
 
     </div>
   )

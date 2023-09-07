@@ -18,7 +18,7 @@ export default function Products({header, subtitle, Logo}) {
         </div>
             <Fade>
             <a href="https://www.facebook.com/dalidapasalubong" target='_blank'>
-       <img src = "/img/FacebookFind.svg" alt="FindUs" className='h-[50px] md:h-[70px]'/>
+       <img src = "/img/FacebookFind.svg" alt="FindUs" className='h-[50px] md:h-[70px] my-5 md:my-2'/>
         </a> 
             </Fade>
         <TypeAnimation

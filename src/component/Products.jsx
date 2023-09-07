@@ -16,7 +16,9 @@ export default function Products({header, subtitle, Logo}) {
                 
            
         </div>
-        <img src = "/img/FacebookFind.svg" alt="FindUs" className='h-[50px] md:h-[70px]'/>
+       <a href="https://www.facebook.com/dalidapasalubong" target='_blank'>
+       <img src = "/img/FacebookFind.svg" alt="FindUs" className='h-[50px] md:h-[70px]'/>
+        </a> 
         <TypeAnimation
       sequence={[
      

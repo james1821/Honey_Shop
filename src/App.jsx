@@ -18,8 +18,8 @@ function App() {
      <Products header={prodList.prodList[0].prodHead} Logo={PasalubongLogo}  subtitle={prodList.prodList[0].prodLine}/>
      {/* <Home/> */}
      <PriceList data={priceListData} />
-     <Products header={prodList.prodList[0].prodHead} Logo={PasalubongLogo}  subtitle={prodList.prodList[0].prodLine}/>
-     <PriceList data={priceListFlowerData} />
+     {/* <Products header={prodList.prodList[0].prodHead} Logo={PasalubongLogo}  subtitle={prodList.prodList[0].prodLine}/>
+     <PriceList data={priceListFlowerData} /> */}
     </>
   
   )

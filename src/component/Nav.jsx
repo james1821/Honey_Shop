@@ -9,13 +9,13 @@ const Nav = () => {
 
   return (
     <nav
-      className={`flex md:items-center md:justify-between p-6  bg-transparent rounded-md z-20 sm:sticky ${
-        isOpen ? 'lg:w-full' : 'sm:w-[60px] lg:w-full'
-      }   ${
-        isOpen ? 'justify-end' : '' 
-      }`}
-    >
-      <div className="block md:hidden">                                       
+    className={`flex lg:items-center lg:justify-between p-6 bg-pink-300 lg:bg-white  z-20 ${
+      isOpen ? 'lg:w-full' : 'w-[60px] lg:w-full'
+    } fixed lg:sticky top-0 ${
+      isOpen ? 'justify-end' : '' 
+    }`}
+  >
+      <div className="block lg:hidden">                                       
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="flex self-end rounded text-black-500"
@@ -37,7 +37,7 @@ const Nav = () => {
         </button>
       </div>
       <div
-        className={`md:w-full md:h-2 md:flex md:items-center md:text-center ${
+        className={`lg:w-full md:h-2 lg:flex lg:items-center lg:text-center ${
           isOpen ? 'block' : 'hidden'
         }`}
       >

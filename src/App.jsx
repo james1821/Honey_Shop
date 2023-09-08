@@ -4,7 +4,9 @@ import Home from './component/Home'
 import Banner from './component/Banner'
 import Products from './component/Products'
 import PasalubongLogo from './assets/img/pasalubong_logo.png'
-import prodList from './component/Product-list/product-list'
+import HandmadeLogo from "./assets/img/Logo.png"
+import Nuts from "/img/Products-nuts.png"
+import Flowers from "/img/Flowers.png"
 import PriceList from './component/PriceList'; 
 import priceListData from './component/Product-list/Prices'; 
 import priceListFlowerData from './component/Product-list/FlowerPrices'; 
@@ -15,11 +17,11 @@ function App() {
     <>
      <Nav/>
      <Banner/>
-     <Products header={prodList.prodList[0].prodHead} Logo={PasalubongLogo}  subtitle={prodList.prodList[0].prodLine}/>
+     <Products Product={Nuts} Logo={PasalubongLogo}  />
      {/* <Home/> */}
      <PriceList data={priceListData} />
-     {/* <Products header={prodList.prodList[0].prodHead} Logo={PasalubongLogo}  subtitle={prodList.prodList[0].prodLine}/>
-     <PriceList data={priceListFlowerData} /> */}
+     <Products Product={Flowers} Logo={HandmadeLogo}  />
+     <PriceList data={priceListFlowerData} />
     </>
   
   )

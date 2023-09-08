@@ -4,16 +4,16 @@ import { TypeAnimation } from 'react-type-animation';
 
 
 
-export default function Products({header, subtitle, Logo}) {
+export default function Products({Logo,Product}) {
   return (
     <div id='Products' className='h-full lg:h-[500px] flex flex-col justify-center items-center ' >
          
         <div className='flex flex-col lg:flex-row justify-center items-center  mt-10 px-5 '>
               <Fade ><img src={Logo} alt="" className='md:h-[250px] w-auto basis-1/2 h-[100px]'/></Fade>
              
-             <Fade> <img src="/img/Products-nuts.png" alt="" className='h-auto md:w-[600px]' /></Fade>
+             <Fade> <img src={Product} alt="" className='h-auto md:w-[600px]' /></Fade>
              
-                
+             
            
         </div>
             <Fade>

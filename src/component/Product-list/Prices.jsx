@@ -3,7 +3,7 @@
 const priceListData = [
     {
       prodImg: '/img/SugarNuts.png',
-      prodName: "Sugar Coated Peanut",
+      prodName: "Peanut Brittle",
       prodPrice: '₱50',
       prodGrams: '100 grams'
     },
@@ -21,7 +21,7 @@ const priceListData = [
     },
     {
       prodImg: '/img/Dilis.png',
-      prodName: "Dilis",
+      prodName: "Sweet Dilis",
       prodPrice: '₱50',
       prodGrams: '100 grams'
     },
@@ -33,7 +33,7 @@ const priceListData = [
     },
     {
       prodImg: '/img/Mais.png',
-      prodName: "Mais",
+      prodName: "Chichacorn",
       prodPrice: '₱50',
       prodGrams: '100 grams'
     }

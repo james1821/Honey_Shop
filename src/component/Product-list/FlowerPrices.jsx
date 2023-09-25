@@ -2,10 +2,8 @@
 
 const priceListFlowerData = [
     {
-      prodImg: '/img/SugarNuts.png',
-      prodName: "Sugar Coated Peanut",
-      prodPrice: '₱50',
-      prodGrams: '100 grams'
+      prodImg: '/img/Rocher.jpg',
+     
     },
     {
       prodImg: '/img/Peanuts1.png',

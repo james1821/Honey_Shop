@@ -6,7 +6,7 @@ const PriceList = ({ data }) => {
   
 
   return (
-    <div id='PriceList' className='bg-ivory h-full'>
+    <div id='PriceList' className='bg-white h-full'>
       <Swiper
         slidesPerView={1}
         spaceBetween={10}
@@ -39,8 +39,9 @@ const PriceList = ({ data }) => {
               onClick={() => handleClick(index)}
             >
               <img className="h-[150px] md:h-[200px] my-5" src={product.prodImg} alt={product.prodName} />
+              
               <div className='flex flex-col justify-center items-center md:text-2xl text-lg bg-white rounded w-[55%]'>
- 
+                
                     <h2 className='text-green-600 '>{product.prodName}</h2>
                     {product.prodPrice && <p>{product.prodPrice}</p>}
                     {product.prodGrams && <p>{product.prodGrams}</p>}

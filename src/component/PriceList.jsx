@@ -38,7 +38,7 @@ const PriceList = ({ data }) => {
               className='flex justify-center items-center text-center flex-row  '
               onClick={() => handleClick(index)}
             >
-              <img className="h-[150px] md:h-[300px] w-full" src={product.prodImg} alt={product.prodName} />
+              <img className="h-[300px] md:h-[300px] w-full" src={product.prodImg} alt={product.prodName} />
               
              
             </div>

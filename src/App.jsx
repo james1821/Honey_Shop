@@ -20,6 +20,9 @@ function App() {
      <Products Product={Nuts} Logo={PasalubongLogo}  />
      {/* <Home/> */}
      <PriceList data={priceListData} />
+     <div class="wrapper">
+      <div class="divider div-transparent div-tab-down"></div>
+    </div>
      <Products Product={Flowers} Logo={HandmadeLogo}  />
      <PriceList data={priceListFlowerData} />
     </>

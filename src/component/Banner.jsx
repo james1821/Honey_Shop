@@ -9,7 +9,7 @@ function Banner() {
   return (
     <header id='head' className='h-full bg-white ' >
         <div className='flex flex-col justify-center  items-center lg:w-1/2 lg:float-right relative z-10'> 
-           <Fade > <h1 className='text-5xl md:text-[90px] mt-20 md:mt-20  text-center '><span className='text-pink-500'>"Quality Products</span>, for everyone"</h1></Fade>
+           <Fade > <h1 className='text-5xl md:text-[90px] mt-20 md:mt-20  text-center '><span className='text-pink-500'>"Quality Products</span>, made with love"</h1></Fade>
             <div className='flex  justify-center  items-center w-1/2 lg:float-right relative z-10 my-10 md:gap-10 gap-5'> 
                
                <Slide

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
 
@@ -25,7 +25,7 @@ const PriceList = ({ data }) => {
           },
           1024: {
             slidesPerView: 3,
-            spaceBetween: 50,
+            spaceBetween: 70,
           },
         }}
         modules={[Pagination]}
@@ -38,7 +38,7 @@ const PriceList = ({ data }) => {
               className='flex justify-center items-center text-center flex-row px-5 '
               onClick={() => handleClick(index)}
             >
-              <img className="h-[300px] md:h-[300px] w-full" src={product.prodImg} alt={product.prodName} />
+              <img className="h-[300px] w-full" src={product.prodImg} alt={product.prodName} />
               
              
             </div>

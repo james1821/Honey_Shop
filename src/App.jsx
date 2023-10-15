@@ -16,11 +16,11 @@ function App() {
     <>
       <Nav />
       <Banner />
-      <Products Product={Nuts} Logo={PasalubongLogo} padding={10} data={priceListData} />
+      <Products id='Snacks' Product={Nuts} Logo={PasalubongLogo} padding={10} data={priceListData} />
       <div className="wrapper">
         <div className="divider div-transparent div-tab-down"></div>
       </div>
-      <Products Product={Flowers} Logo={HandmadeLogo} padding={0} data={priceListFlowerData} reverseRow='yes' />
+      <Products id='Flowers' Product={Flowers} Logo={HandmadeLogo} padding={0} data={priceListFlowerData} reverseRow='yes' />
       {/* reverseRow makes it possible to alternate the logo and product image for design purpose, 'yes' is just a random string */}
     </>
   );

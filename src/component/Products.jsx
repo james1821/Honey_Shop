@@ -10,7 +10,7 @@ export default function Products({ Logo, Product, paddingTop, data, handleClick,
   return (
     <div style={containerStyle} id={id} className={`flex flex-col ${reverseRow} h-screen  ${paddingTop} `}>
       <div className={`h-full lg:h-[430px] md:w-1/2 flex flex-col justify-center items-center`}>
-        <div className='flex flex-col justify-center items-center px-5'>
+        <div className='flex flex-col justify-center items-center px-2'>
           <Fade>
             <img src={Logo} alt="" className='md:h-[200px] w-auto basis-1/2 h-[100px]' />
           </Fade>
@@ -25,7 +25,7 @@ export default function Products({ Logo, Product, paddingTop, data, handleClick,
         </Fade> */}
       </div>
 
-      <div id='PriceList' className='bg-white h-[600px ] md:w-1/2'>
+      <div id='PriceList' className='bg-white h-[600px ] md:w-1/2 mb-5'>
         <Swiper
           autoplay={{ delay: 3000, disableOnInteraction: false }}
           slidesPerView={1}

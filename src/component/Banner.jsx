@@ -15,7 +15,7 @@ function Banner() {
                <Slide
                direction='right'
               
-               > <img className='w-auto' src={Logo} alt="" loading="lazy" />
+               > <img className='w-auto h-[75px]' src={Logo} alt="" loading="lazy" />
                </Slide> 
 
                {/* <Slide

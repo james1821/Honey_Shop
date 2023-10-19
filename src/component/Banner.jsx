@@ -13,16 +13,16 @@ function Banner() {
             <div className='flex  justify-center  items-center w-1/2 lg:float-right relative z-10 my-10 md:gap-10 gap-5'> 
                
                <Slide
-               direction='left'
+               direction='right'
               
-               > <img className='h-[80%] w-auto' src={Logo} alt="" loading="lazy" />
+               > <img className='w-auto' src={Logo} alt="" loading="lazy" />
                </Slide> 
 
-               <Slide
+               {/* <Slide
                direction='right'
             
                > <a href='#Products'><img  className='h-[100%] w-auto' src={PasalubongLogo} alt="" loading="lazy"/></a> 
-               </Slide>
+               </Slide> */}
 
             </div>
           

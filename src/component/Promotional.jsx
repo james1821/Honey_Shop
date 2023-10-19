@@ -8,7 +8,7 @@ function Promotional() {
         Your browser does not support the video tag.
       </video>
       <div className="absolute inset-0 flex items-center justify-center">
-        <div className="text-white text-4xl font-bold text-center">
+        <div className="text-black text-4xl font-bold text-center p-10">
         Made with Passion and Dedication, a labor of love that shines through every detail.
         </div>
       </div>

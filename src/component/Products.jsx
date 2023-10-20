@@ -18,11 +18,11 @@ export default function Products({ Logo, Product, paddingTop, data, handleClick,
             <img src={Product} alt="" className='h-auto md:w-[600px]' />
           </Fade>
         </div>
-        {/* <Fade>
+        <Fade>
           <a href="https://www.facebook.com/dalidapasalubong" target='_blank'>
             <img src="/img/FacebookFind.svg" alt="FindUs" className='h-[50px] md:h-[70px] my-5 md:my-2' />
           </a>
-        </Fade> */}
+        </Fade>
       </div>
 
       <div id='PriceList' className='bg-white h-[600px ] md:w-1/2 mb-5'>

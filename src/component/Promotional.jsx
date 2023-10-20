@@ -3,7 +3,7 @@ import React from 'react';
 function Promotional() {
   return (
     <div id='Promotional' className="relative h-screen">
-      <video autoPlay loop muted className="absolute inset-0 w-full h-full object-cover">
+      <video autoPlay loop muted className="absolute inset-0 w-full h-screen object-cover">
         <source src="/img/Video/works.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>

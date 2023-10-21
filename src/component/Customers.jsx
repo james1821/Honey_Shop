@@ -13,7 +13,7 @@ function Customers() {
   return (
     <div id='Customers' className="container mx-auto p-8 flex flex-col items-center ">
       <h1 className="text-[50px] md:text-[100px] text-center font-bold tracking-[-.2rem]">Our Happy Customers</h1>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
         {images.map((image, index) => (
           <div key={index} className={`w-full md:w-${Math.floor(Math.random() * 3) + 1}/6`}>
             <img src={image} alt={`Image ${index + 1}`} className="w-full" />

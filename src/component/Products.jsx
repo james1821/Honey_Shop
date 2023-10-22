@@ -22,24 +22,24 @@ export default function Products({ Logo, Product, paddingTop, data, handleClick,
         <div className='flex flex-row justify-center items-center px-2'>
          
           <Slide>
-            <img src={images[1]} alt="" className='md:h-[300px] ml-5 md:ml-20 h-[100px]  md:w-full' />
+            <img src={images[1]} alt="" className='md:h-[250px]  md:ml-20 h-[100px]  md:w-full' />
           </Slide>
           <Slide>
-            <img src={images[2]} alt="" className='md:h-[300px] ml-1 md:ml-10 h-[100px] md:w-[20rem]' />
+            <img src={images[2]} alt="" className='md:h-[250px] ml-1 md:ml-10 h-[100px] md:w-[20rem]' />
           </Slide>
           <Fade>
-            <img src={images[0]} alt="" className='md:h-[300px] h-[100px] md:w-[25rem]' />
+            <img src={images[0]} alt="" className='md:h-[250px] h-[100px] md:w-[25rem]' />
           </Fade>
           <Slide direction='right'>
-            <img src={images[4]} alt="" className='md:h-[300px]  md:ml-[-2rem] h-[100px] md:w-[24rem]' />
+            <img src={images[4]} alt="" className='md:h-[250px]  md:ml-[-2rem] h-[100px] md:w-[24rem]' />
           </Slide>
           <Slide direction='right'>
-            <img src={images[3]} alt="" className='md:h-[300px]   md:ml-[-4rem] h-[100px] md:w-[25rem]' />
+            <img src={images[3]} alt="" className='md:h-[250px]   md:ml-[-4rem] h-[100px] md:w-[25rem]' />
           </Slide>
         </div>
         <Fade>
           <a href="https://www.facebook.com/dalidapasalubong" target='_blank'>
-            <img src="/img/FacebookFind.svg" alt="FindUs" className='h-[50px] md:h-[70px] my-5 md:my-2' />
+            <img src="/img/FacebookFind.svg" alt="FindUs" className='h-[50px] md:h-[70px] mt-5 md:my-2' />
           </a>
         </Fade>
       </div>

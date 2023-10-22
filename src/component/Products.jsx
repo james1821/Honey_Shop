@@ -25,16 +25,16 @@ export default function Products({ Logo, Product, paddingTop, data, handleClick,
             <img src={images[1]} alt="" className='md:h-[300px] ml-5 md:ml-20 h-[100px]  md:w-full' />
           </Slide>
           <Slide>
-            <img src={images[2]} alt="" className='md:h-[300px] ml-1 md:ml-10 h-[100px] md:w-full' />
+            <img src={images[2]} alt="" className='md:h-[300px] ml-1 md:ml-10 h-[100px] md:w-[20rem]' />
           </Slide>
           <Fade>
-            <img src={images[0]} alt="" className='md:h-[300px] h-[100px] md:w-full' />
+            <img src={images[0]} alt="" className='md:h-[300px] h-[100px] md:w-[25rem]' />
           </Fade>
           <Slide direction='right'>
-            <img src={images[4]} alt="" className='md:h-[300px]  md:ml-[-2.5rem] h-[100px] md:w-full' />
+            <img src={images[4]} alt="" className='md:h-[300px]  md:ml-[-2rem] h-[100px] md:w-[24rem]' />
           </Slide>
           <Slide direction='right'>
-            <img src={images[3]} alt="" className='md:h-[300px]  md:ml-[-1rem] h-[100px] md:w-full' />
+            <img src={images[3]} alt="" className='md:h-[300px]   md:ml-[-4rem] h-[100px] md:w-[25rem]' />
           </Slide>
         </div>
         <Fade>

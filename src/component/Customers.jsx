@@ -23,7 +23,11 @@ function Customers() {
 
   return (
     <div id='Customers' className="container mx-auto p-8 flex flex-col items-center">
+      <div className='bg-pink-100 w-full'>
       <h1 className="text-[50px] md:text-[100px] text-center font-bold tracking-[-.2rem]">Our Clients</h1>
+
+      </div>
+     
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
         {images.map((image, index) => (
           <div key={index} className={`w-full `}>

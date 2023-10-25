@@ -18,11 +18,7 @@ function Banner() {
                > <img className='w-auto h-[75px]' src={Logo} alt="" loading="lazy" />
                </Slide> 
 
-               {/* <Slide
-               direction='right'
-            
-               > <a href='#Products'><img  className='h-[100%] w-auto' src={PasalubongLogo} alt="" loading="lazy"/></a> 
-               </Slide> */}
+
 
             </div>
           

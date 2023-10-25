@@ -35,10 +35,10 @@ const PriceList = ({ data }) => {
           <SwiperSlide key={index}>
             <div
               id='ProductListItems'
-              className='flex justify-center items-center text-center flex-row px-5 '
+              className='flex justify-center items-center text-center flex-row '
               onClick={() => handleClick(index)}
             >
-              <img className="h-[300px] w-full" src={product.prodImg} alt={product.prodName} />
+              <img className="" src={product.prodImg} alt={product.prodName} />
               
              
             </div>

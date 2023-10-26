@@ -19,11 +19,10 @@ function App() {
      
       <Nav />
       <Banner />
-      {/* <Products id='Snacks' Product={Nuts} Logo={PasalubongLogo} paddingTop='md:pt-[100px] pt-10' data={priceListData} reverseRow='md:flex-row'/> */}
-      <FacebookMessenger/>
       <Products id='Flowers'  Background='' Product={Flowers} Logo={HandmadeLogo} paddingTop='md:pt-[100px]' data={priceListFlowerData} reverseRow='md:flex-row' />
       <Promotional/>
       <Customers/>
+      <FacebookMessenger/>
     </>
   );
 }

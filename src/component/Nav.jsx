@@ -51,25 +51,18 @@ const Nav = () => {
           </a>
 
           <a
-            href="#Snacks"
-            onClick={handleLinkClick}
-            className="block mt-4 md:inline-block md:mt-0 text-black hover:text-pink-500 mr-4"
-          >
-            Dalida's Pasalubong
-          </a>
-          <a
             href="#Flowers"
             onClick={handleLinkClick}
             className="block mt-4 md:inline-block md:mt-0 text-black hover:text-pink-500 mr-4"
           >
-            Handmade by Honey
+            Products
           </a>
           <a
             href="#Works"
             onClick={handleLinkClick}
             className="block mt-4 md:inline-block md:mt-0 text-black hover:text-pink-500 mr-4"
           >
-            Works
+            Our Clients
           </a>
           <a
             href="#"

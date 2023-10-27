@@ -3,7 +3,7 @@ import { Fade, Slide } from 'react-awesome-reveal';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { TypeAnimation } from 'react-type-animation';
 
-export default function Products({ paddingTop, data, handleClick, reverseRow, id, Background }) {
+export default function Products({  data, handleClick, Background }) {
   const containerStyle = {
     backgroundColor: Background,
   };
@@ -17,7 +17,7 @@ export default function Products({ paddingTop, data, handleClick, reverseRow, id
   ];
 
   return (
-    <div style={containerStyle} id={id} className={`flex flex-col ${reverseRow} h-full ${paddingTop}`}>
+    <div style={containerStyle} id='Flowers' className={`flex flex-col-reverse md:flex-row h-full  md:pt-[100px]`}>
       <div id='PriceList' className='bg-white h-[600px] md:w-1/2 md:mb-[4rem]   md:pt-0 pt-10 '>
         <Swiper
           autoplay={{ delay: 3000, disableOnInteraction: false }}
@@ -56,7 +56,7 @@ export default function Products({ paddingTop, data, handleClick, reverseRow, id
           ))}
         </Swiper>
       </div>
-      <div className={`h-full lg:h-[430px] md:w-1/2 flex flex-col justify-center items-center m-auto`}>
+      <div className={`h-full lg:h-[430px] md:w-1/2 flex flex-col justify-center items-center m-auto pt-10`}>
         <div className='flex flex-row justify-center items-center px-2'>
           <Slide>
             <img src={images[1]} alt="" className='md:h-[250px] md:ml-20 h-[100px] md:w-[20rem] cursor-pointer' onClick={() => handleClick(images[1])} />
@@ -74,11 +74,7 @@ export default function Products({ paddingTop, data, handleClick, reverseRow, id
             <img src={images[3]} alt="" className='md:h-[250px] md:ml-[-4rem] h-[100px] md:w-[25rem]' onClick={() => handleClick(images[3])} />
           </Slide>
         </div>
-        <Fade>
-          <a href="https://www.facebook.com/dalidapasalubong" target='_blank'>
-            <img src="/img/FacebookFind.svg" alt="FindUs" className='h-[50px] md:h-[70px] mt-5 md:my-2' />
-          </a>
-        </Fade>
+      
        
         <TypeAnimation
   sequence={[
@@ -91,7 +87,7 @@ export default function Products({ paddingTop, data, handleClick, reverseRow, id
   ]}
   wrapper="span"
   speed={50}
-  className="md:text-6xl text-4xl font-heading font-bold text-black typing py-10 md:ml-10"
+  className="md:text-6xl text-4xl font-heading font-bold text-black typing  md:ml-10"
   repeat={Infinity}
 />
 

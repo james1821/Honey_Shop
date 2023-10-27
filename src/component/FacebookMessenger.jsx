@@ -5,13 +5,16 @@ function FacebookMessenger() {
 
   const appId = process.env.APP_ID;
   const pageId = process.env.PAGE_ID;
-
+  console.log("appId:", appId);
+  console.log("pageId:", pageId);
+  
   return (
     <div>
       <FacebookProvider appId={appId} chatSupport>
         <CustomChat pageId={pageId} minimized={true} />
       </FacebookProvider>
     </div>
+    
   );
 }
 

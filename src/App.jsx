@@ -19,7 +19,7 @@ function App() {
      
       <Nav />
       <Banner />
-      <Products id='Flowers'  Background='' Product={Flowers} Logo={HandmadeLogo} paddingTop='md:pt-[100px]' data={priceListFlowerData} reverseRow='md:flex-row' />
+      <Products Product={Flowers} Logo={HandmadeLogo}  data={priceListFlowerData}  />
       <Promotional/>
       <Customers/>
       <FacebookMessenger/>

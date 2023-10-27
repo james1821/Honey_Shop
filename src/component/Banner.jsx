@@ -2,7 +2,6 @@ import React from 'react'
 import '../App.css'
 import Honelyn1 from '../assets/img/Honelyn-1.png'
 import Logo from '../assets/img/Logo.png'
-import PasalubongLogo from '../assets/img/pasalubong_logo.png'
 import { Fade, Slide } from "../../node_modules/react-awesome-reveal";
 
 function Banner() {

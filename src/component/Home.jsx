@@ -1,15 +1,11 @@
 import React, { useRef, useState } from 'react';
-// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Logo from '../assets/img/Logo.png'
 import PasalubongLogo from '../assets/img/FlowerMoney-1.jpg'
 import Testimonal1 from '../assets/img/testimonal-1.jpg'
 import Testimonal2 from '../assets/img/testimonal-2.jpg'
-
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
-
 import { Autoplay, Pagination } from 'swiper/modules';
 import { Slide } from 'react-awesome-reveal';
 

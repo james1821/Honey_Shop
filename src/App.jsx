@@ -13,6 +13,7 @@ import priceListFlowerData from './component/Product-list/FlowerPrices';
 import Customers from './component/Customers';
 import Promotional from './component/Promotional'; 
 import FacebookMessenger from './component/FacebookMessenger';
+import Testimonials from './component/Testimonials';
 function App() {
   return (
     <>
@@ -20,9 +21,10 @@ function App() {
       <Nav />
       <Banner />
       <Products Product={Flowers} Logo={HandmadeLogo}  data={priceListFlowerData}  />
+      <FacebookMessenger/>
       <Promotional/>
       <Customers/>
-      <FacebookMessenger/>
+      <Testimonials/>
     </>
   );
 }

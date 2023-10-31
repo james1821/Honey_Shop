@@ -21,10 +21,10 @@ function App() {
       <Nav />
       <Banner />
       <Products Product={Flowers} Logo={HandmadeLogo}  data={priceListFlowerData}  />
-      <FacebookMessenger/>
       <Promotional/>
       <Customers/>
       <Testimonials/>
+      <FacebookMessenger/>
     </>
   );
 }

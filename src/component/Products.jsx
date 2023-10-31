@@ -2,6 +2,7 @@ import React from 'react';
 import { Fade, Slide } from 'react-awesome-reveal';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { TypeAnimation } from 'react-type-animation';
+import { Pagination } from 'swiper/modules';
 
 export default function Products({  data, handleClick, Background }) {
   const containerStyle = {
@@ -17,15 +18,15 @@ export default function Products({  data, handleClick, Background }) {
   ];
 
   return (
-    <div style={containerStyle} id='Flowers' className={`flex flex-col-reverse md:flex-row h-full  md:pt-[100px]`}>
-      <div id='PriceList' className='bg-white h-[600px] md:w-1/2 md:mb-[4rem]   md:pt-0 pt-10 '>
+    <div style={containerStyle} id='Flowers' className={`flex flex-col-reverse lg:flex-row h-full  lg:pt-[100px]`}>
+      <div id='PriceList' className='bg-white h-full lg:w-1/2 lg:mb-[4rem]   lg:pt-0 pt-10 '>
         <Swiper
           autoplay={{ delay: 3000, disableOnInteraction: false }}
           slidesPerView={1}
           spaceBetween={10}
-          pagination={{
-            clickable: true,
-          }}
+          pagination={true} 
+          modules={[Pagination]}
+          
           breakpoints={{
             640: {
               slidesPerView: 2,
@@ -50,28 +51,28 @@ export default function Products({  data, handleClick, Background }) {
                 className='flex justify-center items-center text-center flex-row px-5 cursor-pointer'
                 onClick={() => handleClick(product.prodImg)}
               >
-                <img className="md:h-[600px] w-auto" src={product.prodImg} alt={product.prodName} />
+                <img className="lg:h-[600px] w-auto" src={product.prodImg} alt={product.prodName} />
               </div>
             </SwiperSlide>
           ))}
         </Swiper>
       </div>
-      <div className={`h-full lg:h-[430px] md:w-1/2 flex flex-col justify-center items-center m-auto pt-10`}>
+      <div className={`h-full lg:h-[430px] lg:w-1/2 flex flex-col justify-center items-center m-auto pt-10`}>
         <div className='flex flex-row justify-center items-center px-2'>
           <Slide>
-            <img src={images[1]} alt="" className='md:h-[250px] md:ml-20 h-[100px] md:w-[20rem] cursor-pointer' onClick={() => handleClick(images[1])} />
+            <img src={images[1]} alt="" className='lg:h-[250px] lg:ml-20 h-[100px] lg:w-[20rem] cursor-pointer' onClick={() => handleClick(images[1])} />
           </Slide>
           <Slide>
-            <img src={images[2]} alt="" className='md:h-[250px] ml-1 md:ml-10 h-[100px] md:w-[25rem]' onClick={() => handleClick(images[2])} />
+            <img src={images[2]} alt="" className='lg:h-[250px] ml-1 lg:ml-10 h-[100px] lg:w-[25rem]' onClick={() => handleClick(images[2])} />
           </Slide>
           <Fade>
-            <img src={images[0]} alt="" className='md:h-[250px] h-[100px] md:w-[27rem]' onClick={() => handleClick(images[0])} />
+            <img src={images[0]} alt="" className='lg:h-[250px] h-[100px] lg:w-[27rem]' onClick={() => handleClick(images[0])} />
           </Fade>
           <Slide direction='right'>
-            <img src={images[4]} alt="" className='md:h-[250px] md:ml-[-2rem] h-[100px] md:w-[24rem]' onClick={() => handleClick(images[4])} />
+            <img src={images[4]} alt="" className='lg:h-[250px] lg:ml-[-2rem] h-[100px] lg:w-[24rem]' onClick={() => handleClick(images[4])} />
           </Slide>
           <Slide direction='right'>
-            <img src={images[3]} alt="" className='md:h-[250px] md:ml-[-4rem] h-[100px] md:w-[25rem]' onClick={() => handleClick(images[3])} />
+            <img src={images[3]} alt="" className='lg:h-[250px] lg:ml-[-4rem] h-[100px] lg:w-[25rem]' onClick={() => handleClick(images[3])} />
           </Slide>
         </div>
       
@@ -87,7 +88,7 @@ export default function Products({  data, handleClick, Background }) {
   ]}
   wrapper="span"
   speed={50}
-  className="md:text-6xl text-4xl font-heading font-bold text-black typing  md:ml-10"
+  className="lg:text-6xl text-4xl font-heading font-bold text-black typing  lg:ml-10"
   repeat={Infinity}
 />
 

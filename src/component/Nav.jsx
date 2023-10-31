@@ -58,11 +58,11 @@ const Nav = () => {
             Products
           </a>
           <a
-            href="#Works"
+            href="#Clients"
             onClick={handleLinkClick}
             className="block mt-4 md:inline-block md:mt-0 text-black hover:text-pink-500 mr-4"
           >
-            Our Clients
+           Clients
           </a>
           <a
             href="#"

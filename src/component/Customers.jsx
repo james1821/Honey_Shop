@@ -9,15 +9,11 @@ function Customers() {
     '/img/Customers/Customer-2.jpg',
     '/img/Customers/Customer-3.jpg',
     '/img/Customers/Customer-4.jpg',
-    '/img/Customers/Customer-5.jpg',
+    '/img/Customers/Customer-7.jpg',
     '/img/Customers/Customer-6.jpg',
+ 
   ];
-  const testimonials = [
-    '/img/Testimonials/Testimonial1.jpg',
-    '/img/Testimonials/Testimonial2.jpg',
-    '/img/Testimonials/Testimonial3.jpg',
-    '/img/Testimonials/Testimonial4.jpg',
-  ];
+
 
   const [selectedImage, setSelectedImage] = useState(null);
 
@@ -30,8 +26,8 @@ function Customers() {
   };
 
   return (
-    <div id="Customers" className="container mx-auto p-8 flex flex-col items-center">
-      <div className="bg-pink-100 w-full">
+    <div id="Clients" className="container mx-auto p-8 flex flex-col items-center">
+      <div className="w-full">
         <h1 className="text-[50px] md:text-[100px] text-center font-bold tracking-[-.2rem]">Our Clients</h1>
       </div>
 

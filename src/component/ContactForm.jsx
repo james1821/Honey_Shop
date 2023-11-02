@@ -2,12 +2,12 @@ import React from 'react';
 import emailjs from 'emailjs-com';
 
 function ContactForm() {
-  const emailjsUserId = import.meta.env.VITE_REACT_APP_EMAILJS_USER_ID;
+
 
   function sendEmail(e) {
     e.preventDefault();
 
-    emailjs.sendForm('service_fxww3rr', 'YOUR_TEMPLATE_ID', e.target, emailjsUserId)
+    emailjs.sendForm('service_fxww3rr', 'YOUR_TEMPLATE_ID','1oeIVA8eSOSFiFQVZ')
       .then((result) => {
         console.log('Email sent successfully:', result.text);
       })

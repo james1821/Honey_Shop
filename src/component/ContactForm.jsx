@@ -2,22 +2,23 @@ import React from 'react';
 import emailjs from 'emailjs-com';
 
 function ContactForm() {
+  const emailjsUserId = import.meta.env.VITE_REACT_APP_EMAILJS_USER_ID;
+
   function sendEmail(e) {
     e.preventDefault();
 
-    const userId = process.env.REACT_APP_EMAILJS_USER_ID; 
-
-    emailjs.sendForm('service_fxww3rr', 'template_qod6hxa', e.target, userId)
+    emailjs.sendForm('service_fxww3rr', 'YOUR_TEMPLATE_ID', e.target, emailjsUserId)
       .then((result) => {
         console.log('Email sent successfully:', result.text);
-      }, (error) => {
+      })
+      .catch((error) => {
         console.error('Email not sent:', error);
       });
   }
 
   return (
     <div id="Contacts" className='h-full flex flex-col justify-center items-center'>
-      <form onSubmit={sendEmail} className='flex flex-col justify-center items-end '>
+      <form onSubmit={sendEmail} className='flex flex-col justify-center items-end'>
         <input className='border-black' type="text" name="name" placeholder="Your Name" />
         <input type="email" name="email" placeholder="Your Email" />
         <textarea name="message" placeholder="Your Message" />

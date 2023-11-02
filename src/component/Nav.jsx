@@ -8,8 +8,8 @@ const Nav = () => {
   };
 
   return (
-    <nav
-    className={`flex lg:items-center lg:justify-between p-6 bg-pink-300 lg:bg-white  z-20 ${
+    <nav id='Nav'
+    className={`flex lg:items-center lg:justify-between p-6 bg-pink-300 lg:bg-white rounded-md  z-20 ${
       isOpen ? 'lg:w-full' : 'w-[60px] lg:w-full'
     } fixed lg:sticky top-0 ${
       isOpen ? 'justify-end' : '' 

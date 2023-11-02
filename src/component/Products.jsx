@@ -19,7 +19,7 @@ export default function Products({  data, handleClick, Background }) {
 
   return (
     <div style={containerStyle} id='Flowers' className={`flex flex-col-reverse lg:flex-row h-full  lg:pt-[100px]`}>
-      <div id='PriceList' className='bg-white h-full lg:w-1/2 lg:mb-[4rem]   lg:pt-0 pt-10 '>
+      <div id='PriceList' className='bg-white h-full lg:w-1/2 lg:mb-[4rem]   lg:pt-0 py-10 '>
         <Swiper
           autoplay={{ delay: 3000, disableOnInteraction: false }}
           slidesPerView={1}
@@ -57,22 +57,24 @@ export default function Products({  data, handleClick, Background }) {
           ))}
         </Swiper>
       </div>
-      <div className={`h-full lg:h-[430px] lg:w-1/2 flex flex-col justify-center items-center m-auto pt-10`}>
+      <div className={`h-full lg:h-[430px] lg:w-1/2 flex flex-col justify-center items-center  pt-10`}>
+      <h1 className="text-[50px] md:text-[100px] text-center font-bold tracking-[-.2rem]">Our Products</h1>
         <div className='flex flex-row justify-center items-center px-2'>
+          
           <Slide>
-            <img src={images[1]} alt="" className='lg:h-[250px] lg:ml-20 h-[100px] lg:w-[20rem] cursor-pointer' onClick={() => handleClick(images[1])} />
+            <img src={images[1]}  />
           </Slide>
           <Slide>
-            <img src={images[2]} alt="" className='lg:h-[250px] ml-1 lg:ml-10 h-[100px] lg:w-[25rem]' onClick={() => handleClick(images[2])} />
+            <img src={images[2]}  />
           </Slide>
           <Fade>
-            <img src={images[0]} alt="" className='lg:h-[250px] h-[100px] lg:w-[27rem]' onClick={() => handleClick(images[0])} />
+            <img src={images[0]}  />
           </Fade>
           <Slide direction='right'>
-            <img src={images[4]} alt="" className='lg:h-[250px] lg:ml-[-2rem] h-[100px] lg:w-[24rem]' onClick={() => handleClick(images[4])} />
+            <img src={images[4]} />
           </Slide>
           <Slide direction='right'>
-            <img src={images[3]} alt="" className='lg:h-[250px] lg:ml-[-4rem] h-[100px] lg:w-[25rem]' onClick={() => handleClick(images[3])} />
+            <img src={images[3]}  />
           </Slide>
         </div>
       

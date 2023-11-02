@@ -1,7 +1,7 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
-
+import ContactForm from './ContactForm';
 function Testimonials() {
   const images = [
     '/img/Testimonials/Testimonial1.jpg',
@@ -29,12 +29,14 @@ function Testimonials() {
         ))}
       </Swiper>
         </div>
-        
-        <div id='Nav' className='h-full lg:h-[430px] lg:w-1/2 flex items-center justify-center'>
-  <p className='text-[25px] lg:text-[40px] text-center py-10 lg:px-10 p-auto'>
+      
+        <div id='Nav' className='h-full lg:h-[430px] lg:w-1/2 flex flex-col items-center justify-center m-auto'>
+  <p className='text-[25px] lg:text-[30px] text-center py-10 lg:px-10 p-auto'>
     "We wanted to say thanks to our awesome clients for supporting our small business.
-     Your continuous support inspires us to keep doing what we love."
+     Your continuous support inspires us to keep doing what we love." <span className='text-pink-500'>-Honey</span>
   </p>
+  <h1 className="text-[50px] lg:text-[50px] text-center font-bold tracking-[-.2rem]">Contact Us</h1>
+  <ContactForm/>
 </div>
 
     </div>

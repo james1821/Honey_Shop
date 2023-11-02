@@ -14,7 +14,7 @@ import Customers from './component/Customers';
 import Promotional from './component/Promotional'; 
 import FacebookMessenger from './component/FacebookMessenger';
 import Testimonials from './component/Testimonials';
-import ContactForm from './component/ContactForm';
+import Footer from './component/Footer';
 function App() {
   return (
     <>
@@ -25,7 +25,7 @@ function App() {
       <Promotional/>
       <Customers/>
       <Testimonials/>
-      <ContactForm/>
+      <Footer/>
       <FacebookMessenger/>
     </>
   );

@@ -12,7 +12,7 @@ function Testimonials() {
 
   return (
     <div className={`flex flex-col xl:flex-row h-full px-10`}>
-        <div className='bg-white lg:w-1/2 '>
+        <div className='bg-white lg:w-1/2 lg:p-10'>
       <Swiper
         spaceBetween={20}
         slidesPerView={1}
@@ -24,16 +24,19 @@ function Testimonials() {
       >
         {images.map((image, index) => (
           <SwiperSlide key={index}>
-            <img className=' lg:h-[600px] w-auto' src={image} alt={`Testimonial ${index + 1}`} />
+            <img className=' lg:h-auto w-auto' src={image} alt={`Testimonial ${index + 1}`} />
           </SwiperSlide>
         ))}
       </Swiper>
         </div>
+        
+        <div id='Nav' className='h-full lg:h-[430px] lg:w-1/2 flex items-center justify-center'>
+  <p className='text-[25px] lg:text-[40px] text-center py-10 lg:px-10 p-auto'>
+    "We wanted to say thanks to our awesome clients for supporting our small business.
+     Your continuous support inspires us to keep doing what we love."
+  </p>
+</div>
 
-            <div className='h-full lg:h-[430px] lg:w-1/2  '>
-                <p className='text-[25px] lg:text-[50px] text-center'>"We want to say thanks to our awesome clients for supporting our small business.
-                     Your continues support inspires us to keep doing what we love."</p>
-            </div>
     </div>
   );
 }

@@ -2,35 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
   html {
     scroll-behavior: smooth;
   }
-    #head {
-      font-family: brush script mt, cursive;
-      background-image: url('/img/sunflower.png');
-     background-repeat: repeat-x;
+  #head {
+    font-family: brush script mt, cursive;
+    background-image: url("/img/sunflower.png");
+    background-repeat: repeat-x;
     background-position: bottom;
-    }
-    #Promotional{
-      font-family: brush script mt, cursive;
-    }
-
-    #Peanuts {
-      font-family: "Comic Sans MS", "Comic Sans";
-      background-color: white;
-    }
-    
-    #Products, #Nav {
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      font-weight: bold;
-    }
-    #ProductListItems{
-    
-    }
   }
-  .swiper-pagination-bullet-active {
-    background-color: #000 !important;
-}
+  #Promotional {
+    font-family: brush script mt, cursive;
+  }
 
+  #Peanuts {
+    font-family: "Comic Sans MS", "Comic Sans";
+    background-color: white;
+  }
+
+  #Products,
+  #Nav {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+  }
+  #ProductListItems {
+  }
+}
+.swiper-pagination-bullet-active {
+  background-color: #000 !important;
+}

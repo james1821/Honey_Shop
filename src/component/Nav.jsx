@@ -1,34 +1,35 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
-  
+
   const handleLinkClick = () => {
     setIsOpen(false);
   };
 
   return (
-    <nav id='Nav'
-    className={`flex lg:items-center lg:justify-between p-6 bg-pink-300 lg:bg-white rounded-md  z-20 ${
-      isOpen ? 'lg:w-full' : 'w-[60px] lg:w-full'
-    } fixed lg:sticky top-0 ${
-      isOpen ? 'justify-end' : '' 
-    }`}
-  >
-      <div className="block lg:hidden">                                       
+    <nav
+      id="Nav"
+      className={`flex lg:items-center lg:justify-between p-6 bg-pink-300 lg:bg-white rounded-md  z-20 ${
+        isOpen ? "lg:w-full" : "w-[60px] lg:w-full"
+      } fixed lg:sticky top-0 ${isOpen ? "justify-end" : ""}`}
+    >
+      <div className="block lg:hidden">
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="flex self-end rounded text-black-500"
         >
           <svg
-            className={`w-full fill-current h-3  ${isOpen ? 'hidden' : 'block'}`}
+            className={`w-full fill-current h-3  ${
+              isOpen ? "hidden" : "block"
+            }`}
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
           </svg>
           <svg
-            className={`fill-current h-3 w-3 ${isOpen ? 'block' : 'hidden'}`}
+            className={`fill-current h-3 w-3 ${isOpen ? "block" : "hidden"}`}
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -38,7 +39,7 @@ const Nav = () => {
       </div>
       <div
         className={`lg:w-full md:h-2 lg:flex lg:items-center lg:text-center ${
-          isOpen ? 'block' : 'hidden'
+          isOpen ? "block" : "hidden"
         }`}
       >
         <div className="text-xl md:flex-grow md:space-x-[5rem]">
@@ -62,7 +63,7 @@ const Nav = () => {
             onClick={handleLinkClick}
             className="block mt-4 md:inline-block md:mt-0 text-black hover:text-pink-500 mr-4"
           >
-           Clients
+            Clients
           </a>
           <a
             href="#"

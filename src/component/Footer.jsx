@@ -1,10 +1,14 @@
-import React from 'react';
+import React from "react";
 
 function Footer() {
   return (
     <footer className="bg-pink-200 py-4 text-center">
+      <div></div>
       <p className="text-black">
-        &copy; {new Date().getFullYear()}All rights reserved. <a target='_blank' href="https://github.com/james1821"><span>©James</span></a>
+        <a target="_blank" href="https://github.com/james1821">
+          {" "}
+          <u>&copy; James {new Date().getFullYear()} </u>
+        </a>
       </p>
     </footer>
   );

@@ -1,17 +1,14 @@
-
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Pagination } from 'swiper/modules';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination } from "swiper/modules";
 
 const PriceList = ({ data }) => {
-  
-
   return (
-    <div id='PriceList' className='bg-white h-full'>
+    <div id="PriceList" className="bg-white h-full">
       <Swiper
         slidesPerView={1}
         spaceBetween={10}
         pagination={{
-          className: 'bg-black',
+          className: "bg-black",
           clickable: true,
         }}
         breakpoints={{
@@ -34,13 +31,11 @@ const PriceList = ({ data }) => {
         {data.map((product, index) => (
           <SwiperSlide key={index}>
             <div
-              id='ProductListItems'
-              className='flex justify-center items-center text-center flex-row '
+              id="ProductListItems"
+              className="flex justify-center items-center text-center flex-row "
               onClick={() => handleClick(index)}
             >
               <img className="" src={product.prodImg} alt={product.prodName} />
-              
-             
             </div>
           </SwiperSlide>
         ))}

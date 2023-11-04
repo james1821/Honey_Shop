@@ -53,7 +53,7 @@ function ContactForm() {
           placeholder="Your Message"
         />
         <button
-          className="bg-pink-400 rounded-md p-2 m-auto mb-2"
+          className=" bg-pink-500 text-white rounded-md p-2 m-auto mb-2"
           type="submit"
         >
           Send Email

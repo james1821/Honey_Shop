@@ -102,7 +102,7 @@ export default function Products({ data, handleClick, Background }) {
           ]}
           wrapper="span"
           speed={50}
-          className="md:text-6xl text-4xl font-heading font-bold text-black typing  lg:ml-10"
+          className="md:text-6xl text-4xl font-heading font-bold text-black typing mb-2 lg:ml-10"
           repeat={Infinity}
         />
       </div>

@@ -11,8 +11,8 @@ function Testimonials() {
   ];
 
   return (
-    <div className={`flex flex-col xl:flex-row h-full px-10`}>
-      <div className="bg-white lg:w-1/2 lg:p-10">
+    <div className={`flex flex-col md:flex-row h-full px-10`}>
+      <div className="bg-white md:w-1/2 md:p-10">
         <Swiper
           spaceBetween={20}
           slidesPerView={1}

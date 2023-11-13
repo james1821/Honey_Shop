@@ -5,9 +5,23 @@ import HandmadeLogo from "../assets/img/Logo.png";
 function ContactForm() {
   const form = useRef(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isSubmitDisabled, setIsSubmitDisabled] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
 
   function sendEmail(e) {
     e.preventDefault();
+
+    const name = form.current.name.value.trim();
+    const email = form.current.email.value.trim();
+    const message = form.current.message.value.trim();
+
+    if (!name || !email || !message) {
+      setErrorMessage("Please fill out all fields. Thank you!");
+      setIsModalOpen(true);
+      return;
+    }
+
+    setIsSubmitDisabled(true);
 
     emailjs
       .sendForm(
@@ -18,10 +32,13 @@ function ContactForm() {
       )
       .then((result) => {
         console.log("Email sent successfully:", result.text);
-        setIsModalOpen(true); // Show the modal on success
+        setIsModalOpen(true);
       })
       .catch((error) => {
         console.error("Email not sent:", error);
+      })
+      .finally(() => {
+        setIsSubmitDisabled(false);
       });
   }
 
@@ -53,8 +70,9 @@ function ContactForm() {
           placeholder="Your Message"
         />
         <button
-          className=" bg-pink-500 text-white rounded-md p-2 m-auto mb-2"
+          className="bg-pink-500 text-white rounded-md p-2 m-auto mb-2"
           type="submit"
+          disabled={isSubmitDisabled}
         >
           Send Email
         </button>
@@ -63,9 +81,14 @@ function ContactForm() {
       {isModalOpen && (
         <div className="fixed inset-0 flex items-center justify-center z-50">
           <div className="bg-white border-4 border-black rounded-lg p-4 shadow-md lg:w-1/2 w-3/4 text-center">
-            <p className="lg:text-5xl text-2xl">
-              We have received your Email! Thank you for contacting us.
-            </p>
+            {errorMessage && (
+              <p className="text-red-500 font-bold mb-4">{errorMessage}</p>
+            )}
+            {!errorMessage && (
+              <p className="lg:text-5xl text-2xl">
+                We have received your Email! Thank you for contacting us.
+              </p>
+            )}
             <img
               src={HandmadeLogo}
               alt=""
@@ -73,7 +96,10 @@ function ContactForm() {
             />
             <button
               className="bg-pink-500 text-white text-2xl px-4 py-2 mt-2 rounded"
-              onClick={() => setIsModalOpen(false)}
+              onClick={() => {
+                setIsModalOpen(false);
+                setErrorMessage("");
+              }}
             >
               Close
             </button>

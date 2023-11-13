@@ -58,7 +58,7 @@ export default function Products({ data, handleClick, Background }) {
                 onClick={() => handleClick(product.prodImg)}
               >
                 <img
-                  className="lg:h-[600px] w-auto"
+                  className="lg:h-[600px] h-[25rem] w-auto"
                   src={product.prodImg}
                   alt={product.prodName}
                 />

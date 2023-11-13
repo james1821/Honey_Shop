@@ -1,6 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
+import { Pagination, Autoplay } from "swiper/modules";
 import ContactForm from "./ContactForm";
 function Testimonials() {
   const images = [
@@ -16,10 +16,12 @@ function Testimonials() {
         <Swiper
           spaceBetween={20}
           slidesPerView={1}
-          loop={false}
-          navigation
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
           pagination={true}
-          modules={[Pagination]}
+          modules={[Pagination, Autoplay]}
           className="w-full "
         >
           {images.map((image, index) => (

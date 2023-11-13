@@ -75,19 +75,19 @@ export default function Products({ data, handleClick, Background }) {
         </h1>
         <div className="flex flex-row justify-center items-center px-2">
           <Slide>
-            <img src={images[1]} />
+            <img height={217} width={277} src={images[1]} />
           </Slide>
           <Slide>
-            <img src={images[2]} />
+            <img height={217} width={277} src={images[2]} />
           </Slide>
           <Fade>
-            <img src={images[0]} />
+            <img height={217} width={277} src={images[0]} />
           </Fade>
           <Slide direction="right">
-            <img src={images[4]} />
+            <img height={217} width={277} src={images[4]} />
           </Slide>
           <Slide direction="right">
-            <img src={images[3]} />
+            <img height={217} width={277} src={images[3]} />
           </Slide>
         </div>
 
@@ -102,7 +102,7 @@ export default function Products({ data, handleClick, Background }) {
           ]}
           wrapper="span"
           speed={50}
-          className="lg:text-6xl text-4xl font-heading font-bold text-black typing  lg:ml-10"
+          className="md:text-6xl text-4xl font-heading font-bold text-black typing  lg:ml-10"
           repeat={Infinity}
         />
       </div>

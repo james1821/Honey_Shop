@@ -14,7 +14,7 @@ import Customers from "./component/Customers";
 import Promotional from "./component/Promotional";
 import FacebookMessenger from "./component/FacebookMessenger";
 import Testimonials from "./component/Testimonials";
-import Footer from "./component/Footer";
+import Tiktok from "./component/Tiktok";
 function App() {
   return (
     <>
@@ -25,10 +25,11 @@ function App() {
         Logo={HandmadeLogo}
         data={priceListFlowerData}
       />
+      <Tiktok />
       <Promotional />
       <Customers />
       <Testimonials />
-      <Footer />
+
       <FacebookMessenger />
     </>
   );

@@ -25,11 +25,9 @@ function App() {
         Logo={HandmadeLogo}
         data={priceListFlowerData}
       />
-      <Tiktok />
       <Promotional />
       <Customers />
       <Testimonials />
-
       <FacebookMessenger />
     </>
   );

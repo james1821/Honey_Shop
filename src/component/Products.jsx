@@ -70,7 +70,7 @@ export default function Products({ data, handleClick, Background }) {
       <div
         className={`h-full lg:h-[430px] lg:w-1/2 flex flex-col justify-center items-center `}
       >
-        <h1 className="text-[50px] md:text-[100px] text-center font-bold tracking-[-.2rem]">
+        <h1 className="text-[50px] md:text-[100px] text-center font-bold tracking-[-.2rem] lg:mt-[150px]">
           Our Products
         </h1>
         <div className="flex flex-row justify-center items-center px-2">

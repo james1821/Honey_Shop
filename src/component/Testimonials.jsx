@@ -41,9 +41,9 @@ function Testimonials() {
         className="h-full lg:h-[430px] lg:w-1/2 flex flex-col items-center justify-center m-auto"
       >
         <p className="text-[25px] lg:text-[30px] text-center pt-10 pb-5 lg:px-10 p-auto">
-          "We wanted to say thanks to our awesome clients for supporting our
-          small business. Your continuous support inspires us to keep doing what
-          we love." <span className="text-pink-500">-Honey</span>
+          "We wanted to thank our awesome clients for supporting our small
+          business. Your continuous support inspires us to keep doing what we
+          love." <span className="text-pink-500">-Honey</span>
         </p>
         <h1 className="text-[50px] lg:text-[50px] text-center font-bold tracking-[-.2rem]">
           Contact Us

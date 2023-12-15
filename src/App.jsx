@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Nav from "./component/Nav";
 import Home from "./component/Home";
 import Banner from "./component/Banner";
@@ -14,21 +14,41 @@ import Customers from "./component/Customers";
 import Promotional from "./component/Promotional";
 import FacebookMessenger from "./component/FacebookMessenger";
 import Testimonials from "./component/Testimonials";
-import Tiktok from "./component/Tiktok";
+import About from "./component/About";
+import Loading from "./component/Loading";
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate loading time (you can replace this with actual loading logic)
+    const timeout = setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+
+    // Clean up the timeout to avoid memory leaks
+    return () => clearTimeout(timeout);
+  }, []);
+
   return (
     <>
-      <Nav />
-      <Banner />
-      <Products
-        Product={Flowers}
-        Logo={HandmadeLogo}
-        data={priceListFlowerData}
-      />
-      <Promotional />
-      <Customers />
-      <Testimonials />
-      <FacebookMessenger />
+      {loading ? (
+        <Loading />
+      ) : (
+        <>
+          <Nav />
+          <Banner />
+          <About />
+          <Products
+            Product={Flowers}
+            Logo={HandmadeLogo}
+            data={priceListFlowerData}
+          />
+          <Promotional />
+          <Customers />
+          <Testimonials />
+          <FacebookMessenger />
+        </>
+      )}
     </>
   );
 }

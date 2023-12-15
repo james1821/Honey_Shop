@@ -39,6 +39,7 @@ function Customers() {
           <div key={index} className={`w-full `}>
             <Fade>
               <img
+                loading="lazy"
                 src={image}
                 alt={`Image ${index + 1}`}
                 className="w-full cursor-pointer"
@@ -55,7 +56,8 @@ function Customers() {
             <img
               src={selectedImage}
               alt="Selected Customer"
-              className="w-[500px]"
+              className="w-[25rem]"
+              loading="lazy"
             />
 
             <div className="flex flex-row justify-between  ">

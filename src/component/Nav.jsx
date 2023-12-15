@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -49,6 +49,14 @@ const Nav = () => {
             className="block mt-4 md:inline-block md:mt-0 text-black hover:text-pink-500 mr-4"
           >
             Home
+          </a>
+
+          <a
+            href="#About"
+            onClick={handleLinkClick}
+            className="block mt-4 md:inline-block md:mt-0 text-black hover:text-pink-500 mr-4"
+          >
+            About
           </a>
 
           <a

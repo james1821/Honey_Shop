@@ -1,7 +1,6 @@
 import React from "react";
 import { Fade, Slide } from "react-awesome-reveal";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { TypeAnimation } from "react-type-animation";
 import { Pagination } from "swiper/modules";
 
 export default function Products({ data, handleClick, Background }) {
@@ -90,21 +89,6 @@ export default function Products({ data, handleClick, Background }) {
             <img height={217} width={277} src={images[3]} />
           </Slide>
         </div>
-
-        <TypeAnimation
-          sequence={[
-            "Interested?",
-            1000,
-            "Visit our Facebook Page!",
-            1000,
-            "Message Us 💬",
-            2000,
-          ]}
-          wrapper="span"
-          speed={50}
-          className="md:text-6xl text-4xl font-heading font-bold text-black typing mb-2 lg:ml-10"
-          repeat={Infinity}
-        />
       </div>
     </div>
   );

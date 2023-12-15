@@ -30,6 +30,7 @@ function Testimonials() {
                 className=" lg:h-auto w-auto"
                 src={image}
                 alt={`Testimonial ${index + 1}`}
+                loading="lazy"
               />
             </SwiperSlide>
           ))}

@@ -10,7 +10,7 @@ function Banner() {
       <div className="flex flex-col justify-center  items-center lg:w-1/2 lg:float-right relative z-10">
         <Fade>
           {" "}
-          <h1 className="text-5xl md:text-[90px] mt-20 md:mt-20  text-center ">
+          <h1 className="text-5xl md:text-[90px] mt-20 md:mt-20 md:px-20  text-center ">
             <span className="text-pink-500">"Quality Products</span>, made with
             love"
           </h1>

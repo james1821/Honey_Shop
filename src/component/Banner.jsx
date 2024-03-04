@@ -3,14 +3,13 @@ import "../App.css";
 import Honelyn1 from "../assets/img/Honelyn-1.png";
 import Logo from "../assets/img/Logo.png";
 import { Fade, Slide } from "../../node_modules/react-awesome-reveal";
-
 function Banner() {
   return (
-    <header id="head" className="h-full bg-white ">
-      <div className="flex flex-col justify-center  items-center lg:w-1/2 lg:float-right relative z-10">
+    <header id="head" className="h-screen relative bg-white ">
+      <div className="flex flex-col justify-center  items-center lg:w-1/2 lg:float-right relative lg:pr-20 z-10">
         <Fade>
           {" "}
-          <h1 className="text-5xl md:text-[90px] mt-20 md:mt-20 md:px-20  text-center ">
+          <h1 className="text-5xl md:text-[90px] mt-20 md:mt-20   text-center ">
             <span className="text-pink-500">"Quality Products</span>, made with
             love"
           </h1>
@@ -22,12 +21,12 @@ function Banner() {
           </Slide>
         </div>
       </div>
-      <Fade delay={200}>
+      <Fade triggerOnce delay={200}>
         {" "}
         <img
           src={Honelyn1}
           alt=""
-          className="h-[400px] md:h-[680px] m-auto lg:m-0 z-0"
+          className="h-[400px] md:h-[680px] m-auto bottom-0 absolute z-0"
           loading="lazy"
         />
       </Fade>

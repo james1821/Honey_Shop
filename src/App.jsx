@@ -16,16 +16,16 @@ import FacebookMessenger from "./component/FacebookMessenger";
 import Testimonials from "./component/Testimonials";
 import About from "./component/About";
 import Loading from "./component/Loading";
+import MaintenanceNotice from "./component/Maintenance";
+
 function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate loading time (you can replace this with actual loading logic)
     const timeout = setTimeout(() => {
       setLoading(false);
     }, 2000);
 
-    // Clean up the timeout to avoid memory leaks
     return () => clearTimeout(timeout);
   }, []);
 
@@ -35,7 +35,7 @@ function App() {
         <Loading />
       ) : (
         <>
-          <Nav />
+          {/* <Nav />
           <Banner />
           <About />
           <Products
@@ -46,7 +46,8 @@ function App() {
           <Promotional />
           <Customers />
           <Testimonials />
-          <FacebookMessenger />
+          <FacebookMessenger /> */}
+          <MaintenanceNotice />
         </>
       )}
     </>
